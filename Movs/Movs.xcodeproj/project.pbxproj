@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CD91FA723C73FA4004420C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FA623C73FA4004420C8 /* AppDelegate.swift */; };
+		8CD91FA923C73FA4004420C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FA823C73FA4004420C8 /* SceneDelegate.swift */; };
+		8CD91FAB23C73FA4004420C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FAA23C73FA4004420C8 /* ViewController.swift */; };
+		8CD91FAE23C73FA4004420C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD91FAC23C73FA4004420C8 /* Main.storyboard */; };
+		8CD91FB123C73FA4004420C8 /* Movs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FAF23C73FA4004420C8 /* Movs.xcdatamodeld */; };
+		8CD91FB323C73FA9004420C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD91FB223C73FA9004420C8 /* Assets.xcassets */; };
+		8CD91FB623C73FA9004420C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD91FB423C73FA9004420C8 /* LaunchScreen.storyboard */; };
+		8CD91FC123C73FA9004420C8 /* MovsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FC023C73FA9004420C8 /* MovsTests.swift */; };
+		8CD91FD223C7A8D9004420C8 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FD123C7A8D9004420C8 /* EndPointType.swift */; };
+		8CD91FD423C7A97C004420C8 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FD323C7A97C004420C8 /* HTTPMethod.swift */; };
+		8CD91FD623C7A9DB004420C8 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FD523C7A9DB004420C8 /* HTTPTask.swift */; };
+		8CD91FD823C7AB45004420C8 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FD723C7AB45004420C8 /* ParameterEncoding.swift */; };
+		8CD91FDA23C7AC02004420C8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FD923C7AC02004420C8 /* NetworkError.swift */; };
+		8CD91FDD23C7AC78004420C8 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FDC23C7AC78004420C8 /* URLParameterEncoder.swift */; };
+		8CD91FDF23C7AEBC004420C8 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FDE23C7AEBC004420C8 /* JSONParameterEncoder.swift */; };
+		8CD91FE123C7D12F004420C8 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FE023C7D12F004420C8 /* NetworkRouter.swift */; };
+		8CD91FE323C7D1EA004420C8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FE223C7D1EA004420C8 /* Router.swift */; };
+		8CD91FE623C7DA93004420C8 /* MovieEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FE523C7DA93004420C8 /* MovieEndPoint.swift */; };
+		8CD91FE923C7DBAC004420C8 /* MovieApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FE823C7DBAC004420C8 /* MovieApiResponse.swift */; };
+		8CD91FED23C7E09D004420C8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD91FEB23C7DBD7004420C8 /* NetworkManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CD91FBD23C73FA9004420C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CD91F9B23C73FA3004420C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CD91FA223C73FA3004420C8;
+			remoteInfo = Movs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8CD91FA323C73FA4004420C8 /* Movs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD91FA623C73FA4004420C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CD91FA823C73FA4004420C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8CD91FAA23C73FA4004420C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CD91FAD23C73FA4004420C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CD91FB023C73FA4004420C8 /* Movs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Movs.xcdatamodel; sourceTree = "<group>"; };
+		8CD91FB223C73FA9004420C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CD91FB523C73FA9004420C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CD91FB723C73FA9004420C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD91FBC23C73FA9004420C8 /* MovsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD91FC023C73FA9004420C8 /* MovsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovsTests.swift; sourceTree = "<group>"; };
+		8CD91FC223C73FA9004420C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD91FD123C7A8D9004420C8 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		8CD91FD323C7A97C004420C8 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		8CD91FD523C7A9DB004420C8 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		8CD91FD723C7AB45004420C8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		8CD91FD923C7AC02004420C8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8CD91FDC23C7AC78004420C8 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		8CD91FDE23C7AEBC004420C8 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		8CD91FE023C7D12F004420C8 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		8CD91FE223C7D1EA004420C8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8CD91FE523C7DA93004420C8 /* MovieEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEndPoint.swift; sourceTree = "<group>"; };
+		8CD91FE823C7DBAC004420C8 /* MovieApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApiResponse.swift; sourceTree = "<group>"; };
+		8CD91FEB23C7DBD7004420C8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CD91FA023C73FA3004420C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CD91FB923C73FA9004420C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CD91F9A23C73FA3004420C8 = {
+			isa = PBXGroup;
+			children = (
+				8CD91FA523C73FA4004420C8 /* Movs */,
+				8CD91FBF23C73FA9004420C8 /* MovsTests */,
+				8CD91FA423C73FA4004420C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CD91FA423C73FA4004420C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CD91FA323C73FA4004420C8 /* Movs.app */,
+				8CD91FBC23C73FA9004420C8 /* MovsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CD91FA523C73FA4004420C8 /* Movs */ = {
+			isa = PBXGroup;
+			children = (
+				8CD91FE723C7DB97004420C8 /* Model */,
+				8CD91FCF23C7A892004420C8 /* Networking */,
+				8CD91FA623C73FA4004420C8 /* AppDelegate.swift */,
+				8CD91FA823C73FA4004420C8 /* SceneDelegate.swift */,
+				8CD91FAA23C73FA4004420C8 /* ViewController.swift */,
+				8CD91FAC23C73FA4004420C8 /* Main.storyboard */,
+				8CD91FB223C73FA9004420C8 /* Assets.xcassets */,
+				8CD91FB423C73FA9004420C8 /* LaunchScreen.storyboard */,
+				8CD91FB723C73FA9004420C8 /* Info.plist */,
+				8CD91FAF23C73FA4004420C8 /* Movs.xcdatamodeld */,
+			);
+			path = Movs;
+			sourceTree = "<group>";
+		};
+		8CD91FBF23C73FA9004420C8 /* MovsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CD91FC023C73FA9004420C8 /* MovsTests.swift */,
+				8CD91FC223C73FA9004420C8 /* Info.plist */,
+			);
+			path = MovsTests;
+			sourceTree = "<group>";
+		};
+		8CD91FCF23C7A892004420C8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8CD91FEA23C7DBC8004420C8 /* Manager */,
+				8CD91FE423C7DA81004420C8 /* EndPoint */,
+				8CD91FDB23C7AC5F004420C8 /* Enconding */,
+				8CD91FD023C7A8BC004420C8 /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8CD91FD023C7A8BC004420C8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8CD91FD123C7A8D9004420C8 /* EndPointType.swift */,
+				8CD91FD323C7A97C004420C8 /* HTTPMethod.swift */,
+				8CD91FD523C7A9DB004420C8 /* HTTPTask.swift */,
+				8CD91FD723C7AB45004420C8 /* ParameterEncoding.swift */,
+				8CD91FD923C7AC02004420C8 /* NetworkError.swift */,
+				8CD91FE023C7D12F004420C8 /* NetworkRouter.swift */,
+				8CD91FE223C7D1EA004420C8 /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8CD91FDB23C7AC5F004420C8 /* Enconding */ = {
+			isa = PBXGroup;
+			children = (
+				8CD91FDC23C7AC78004420C8 /* URLParameterEncoder.swift */,
+				8CD91FDE23C7AEBC004420C8 /* JSONParameterEncoder.swift */,
+			);
+			path = Enconding;
+			sourceTree = "<group>";
+		};
+		8CD91FE423C7DA81004420C8 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				8CD91FE523C7DA93004420C8 /* MovieEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		8CD91FE723C7DB97004420C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CD91FE823C7DBAC004420C8 /* MovieApiResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CD91FEA23C7DBC8004420C8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8CD91FEB23C7DBD7004420C8 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CD91FA223C73FA3004420C8 /* Movs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CD91FC523C73FA9004420C8 /* Build configuration list for PBXNativeTarget "Movs" */;
+			buildPhases = (
+				8CD91F9F23C73FA3004420C8 /* Sources */,
+				8CD91FA023C73FA3004420C8 /* Frameworks */,
+				8CD91FA123C73FA3004420C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Movs;
+			productName = Movs;
+			productReference = 8CD91FA323C73FA4004420C8 /* Movs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CD91FBB23C73FA9004420C8 /* MovsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CD91FC823C73FA9004420C8 /* Build configuration list for PBXNativeTarget "MovsTests" */;
+			buildPhases = (
+				8CD91FB823C73FA9004420C8 /* Sources */,
+				8CD91FB923C73FA9004420C8 /* Frameworks */,
+				8CD91FBA23C73FA9004420C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CD91FBE23C73FA9004420C8 /* PBXTargetDependency */,
+			);
+			name = MovsTests;
+			productName = MovsTests;
+			productReference = 8CD91FBC23C73FA9004420C8 /* MovsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CD91F9B23C73FA3004420C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Gustavo Chaves";
+				TargetAttributes = {
+					8CD91FA223C73FA3004420C8 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					8CD91FBB23C73FA9004420C8 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 8CD91FA223C73FA3004420C8;
+					};
+				};
+			};
+			buildConfigurationList = 8CD91F9E23C73FA3004420C8 /* Build configuration list for PBXProject "Movs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CD91F9A23C73FA3004420C8;
+			productRefGroup = 8CD91FA423C73FA4004420C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CD91FA223C73FA3004420C8 /* Movs */,
+				8CD91FBB23C73FA9004420C8 /* MovsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CD91FA123C73FA3004420C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD91FB623C73FA9004420C8 /* LaunchScreen.storyboard in Resources */,
+				8CD91FB323C73FA9004420C8 /* Assets.xcassets in Resources */,
+				8CD91FAE23C73FA4004420C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CD91FBA23C73FA9004420C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CD91F9F23C73FA3004420C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD91FD623C7A9DB004420C8 /* HTTPTask.swift in Sources */,
+				8CD91FAB23C73FA4004420C8 /* ViewController.swift in Sources */,
+				8CD91FD823C7AB45004420C8 /* ParameterEncoding.swift in Sources */,
+				8CD91FA723C73FA4004420C8 /* AppDelegate.swift in Sources */,
+				8CD91FED23C7E09D004420C8 /* NetworkManager.swift in Sources */,
+				8CD91FDF23C7AEBC004420C8 /* JSONParameterEncoder.swift in Sources */,
+				8CD91FE123C7D12F004420C8 /* NetworkRouter.swift in Sources */,
+				8CD91FD423C7A97C004420C8 /* HTTPMethod.swift in Sources */,
+				8CD91FE923C7DBAC004420C8 /* MovieApiResponse.swift in Sources */,
+				8CD91FB123C73FA4004420C8 /* Movs.xcdatamodeld in Sources */,
+				8CD91FDA23C7AC02004420C8 /* NetworkError.swift in Sources */,
+				8CD91FD223C7A8D9004420C8 /* EndPointType.swift in Sources */,
+				8CD91FDD23C7AC78004420C8 /* URLParameterEncoder.swift in Sources */,
+				8CD91FE623C7DA93004420C8 /* MovieEndPoint.swift in Sources */,
+				8CD91FA923C73FA4004420C8 /* SceneDelegate.swift in Sources */,
+				8CD91FE323C7D1EA004420C8 /* Router.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CD91FB823C73FA9004420C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD91FC123C73FA9004420C8 /* MovsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CD91FBE23C73FA9004420C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CD91FA223C73FA3004420C8 /* Movs */;
+			targetProxy = 8CD91FBD23C73FA9004420C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CD91FAC23C73FA4004420C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CD91FAD23C73FA4004420C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CD91FB423C73FA9004420C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CD91FB523C73FA9004420C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CD91FC323C73FA9004420C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CD91FC423C73FA9004420C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CD91FC623C73FA9004420C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Movs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gchaves.Movs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CD91FC723C73FA9004420C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Movs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gchaves.Movs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CD91FC923C73FA9004420C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gchaves.MovsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movs.app/Movs";
+			};
+			name = Debug;
+		};
+		8CD91FCA23C73FA9004420C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gchaves.MovsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movs.app/Movs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CD91F9E23C73FA3004420C8 /* Build configuration list for PBXProject "Movs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CD91FC323C73FA9004420C8 /* Debug */,
+				8CD91FC423C73FA9004420C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CD91FC523C73FA9004420C8 /* Build configuration list for PBXNativeTarget "Movs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CD91FC623C73FA9004420C8 /* Debug */,
+				8CD91FC723C73FA9004420C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CD91FC823C73FA9004420C8 /* Build configuration list for PBXNativeTarget "MovsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CD91FC923C73FA9004420C8 /* Debug */,
+				8CD91FCA23C73FA9004420C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8CD91FAF23C73FA4004420C8 /* Movs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8CD91FB023C73FA4004420C8 /* Movs.xcdatamodel */,
+			);
+			currentVersion = 8CD91FB023C73FA4004420C8 /* Movs.xcdatamodel */;
+			path = Movs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8CD91F9B23C73FA3004420C8 /* Project object */;
+}
